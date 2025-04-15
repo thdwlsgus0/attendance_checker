@@ -2,8 +2,13 @@
 
 import { QRCodeSVG } from 'qrcode.react';
 import styles from './page.module.scss';
+import { useDogs } from '../common/hooks/useGetDogs'
 
 export default function Home() {
+  const { data: dog, isLoading } = useDogs();
+
+  if (isLoading) return <div>Loading...</div>
+
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -14,6 +19,9 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.qrSection}>
           <div className={styles.qrContainer}>
+            {/* <div>
+              <img src={dog?.message} alt="dog" />
+            </div> */}
             <QRCodeSVG
               value="https://www.naver.com"
               size={200}
