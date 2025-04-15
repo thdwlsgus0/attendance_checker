@@ -2,7 +2,7 @@
 
 import { QRCodeSVG } from 'qrcode.react';
 import styles from './page.module.scss';
-import { useDogs } from '../common/hooks/useGetDogs'
+// import { useDogs } from '../common/hooks/useGetDogs'
 
 export default function Home() {
   // const { data: dog, isLoading } = useDogs();
