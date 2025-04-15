@@ -19,6 +19,7 @@ class ApiClient {
 
             return response.json();
         } catch (error) {
+            console.error(error);
             throw new Error('Api request failed');
         }
     }

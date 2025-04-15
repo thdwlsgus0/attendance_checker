@@ -5,9 +5,9 @@ import styles from './page.module.scss';
 import { useDogs } from '../common/hooks/useGetDogs'
 
 export default function Home() {
-  const { data: dog, isLoading } = useDogs();
+  // const { data: dog, isLoading } = useDogs();
 
-  if (isLoading) return <div>Loading...</div>
+  // if (isLoading) return <div>Loading...</div>
 
   return (
     <div className={styles.container}>
