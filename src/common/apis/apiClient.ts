@@ -50,6 +50,7 @@ class ApiClient {
       body: JSON.stringify(data),
     })
   }
+  
   // DELETE 요청
   async delete<T>(endpoint: string, options?: RequestInit): Promise<T> {
     return this.request<T>(endpoint, {
