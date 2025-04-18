@@ -21,9 +21,6 @@ function DetailContent() {
       <main className={styles.main}>
         <div className={styles.qrSection}>
           <div className={styles.qrContainer}>
-            {/* <div>
-              <img src={dog?.message} alt="dog" />
-            </div> */}
             <QRCodeSVG
               value={formData?.formUrl || ''}
               size={200}
